@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="g64f8459272db6d6ddc1157cea45c5e0d" title="Video - TFRs and NOTAMs (01:10 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Your drone surveying company is a title sponsor for a race team at the Laguna Seca Mazda Raceway. To promote your new aerial surveying department, you decide to video part of the race using a small UA. The FAA has issued a Temporary Flight Restriction (TFR) for the race in the area you plan to fly. In this situation:&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1550">
+                <material>
+                  <mattext texttype="text/plain">You may fly your drone in the TFR since your company is sponsoring a team at the race.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7634">
+                <material>
+                  <mattext texttype="text/plain">the TFR applies to all aircraft; you may not fly in the area without a Certificate of Waiver or Authorization</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4619">
+                <material>
+                  <mattext texttype="text/plain">Flying your drone is allowed if you notify all non-participating people of the closed course UA operation.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7634</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;There’s a local air show this weekend, and a NOTAM has been issued to establish a no-fly zone for the area of your planned flight mission. When would you be allowed to fly?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6467">
+                <material>
+                  <mattext texttype="text/plain">After all aircraft in the air show have landed and the event has concluded</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6698">
+                <material>
+                  <mattext texttype="text/plain">With prior approval from the FAA, you can operate during the NOTAM</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5161">
+                <material>
+                  <mattext texttype="text/plain">As per the instructions in the NOTAM</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">5161</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;A TFR applies to:&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2433">
+                <material>
+                  <mattext texttype="text/plain">Only crewed aircraft pilots, but drone pilots should use to maintain situational awareness</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8307">
+                <material>
+                  <mattext texttype="text/plain">Only drone pilots</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7604">
+                <material>
+                  <mattext texttype="text/plain">All pilots</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7604</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;A flight data center (FDC) Notice to Airmen (NOTAM) is issued to designate a:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9774">
+                <material>
+                  <mattext texttype="text/plain">Warning Area</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2937">
+                <material>
+                  <mattext texttype="text/plain">Temporary Flight Restrictions (TFR)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="470">
+                <material>
+                  <mattext texttype="text/plain">Alert Area</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2937</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;One of the purposes for issuing a temporary flight restriction (TFR) is to&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2268">
+                <material>
+                  <mattext texttype="text/plain">announce inclement weather.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="171">
+                <material>
+                  <mattext texttype="text/plain">identify airport advisory areas.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8644">
+                <material>
+                  <mattext texttype="text/plain">protect public figures, secure special events, and clear air traffic for natural disaster response.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8644</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;span&gt;Time-critical information on airports and changes that affect the national airspace system are provided by:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6631">
+                <material>
+                  <mattext texttype="text/plain">Notices to Airmen (NOTAMs).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6976">
+                <material>
+                  <mattext texttype="text/plain">the Airport/Facilities Directory (A/FD).</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4949">
+                <material>
+                  <mattext texttype="text/plain">Advisory Circulars (ACs).</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6631</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;(Refer to Figure 20, area 5.) Who would a Remote Pilot in Command contact to "CHECK NOTAMS" as it is noted in the CAUTION box regarding the unmarked balloon?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9762">
+                <material>
+                  <mattext texttype="text/plain">NTSB office</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1651">
+                <material>
+                  <mattext texttype="text/plain">FAA district office</mattext>
+                </material>
+              </response_label>
+              <response_label ident="942">
+                <material>
+                  <mattext texttype="text/plain">Flight Service</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">942</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;&amp;nbsp;If a drone pilot wishes to fly in an area where temporary flight restrictions (TFRs) are in place, what is required?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9916">
+                <material>
+                  <mattext texttype="text/plain">No special permission is required for drones.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8121">
+                <material>
+                  <mattext texttype="text/plain">The pilot must notify the nearest airport.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7810">
+                <material>
+                  <mattext texttype="text/plain">Special authorization from the FAA is required.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5014">
+                <material>
+                  <mattext texttype="text/plain">The pilot must have a commercial pilot license.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7810</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

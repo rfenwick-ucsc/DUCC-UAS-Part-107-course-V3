@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="g6f393f13d7a432e6fa6309d6cc13bde2" title="Video - Visual Line of Sight (00:49 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Under Part 107, what is the requirement regarding maintaining visual line of sight (VLOS) during drone operations?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="8072">
+                <material>
+                  <mattext texttype="text/plain">The drone must be within VLOS at all times, but binoculars can be used to enhance vision</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4381">
+                <material>
+                  <mattext texttype="text/plain">The drone can be operated beyond VLOS with special equipment</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9028">
+                <material>
+                  <mattext texttype="text/plain">The drone must remain within VLOS of the pilot or a designated visual observer</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1829">
+                <material>
+                  <mattext texttype="text/plain">VLOS is not required for operations under 100 feet</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">8072</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="8072_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4381</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4381_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">9028</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="9028_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">1829</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="1829_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9028</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="8072_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Incorrect. Part 107 mandates that the drone must be kept within the visual line of sight of the pilot or a designated visual observer. This means it must be visible to the pilot or observer without the aid of any devices such as binoculars</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="4381_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Incorrect. Part 107 mandates that the drone must be kept within the visual line of sight of the pilot or a designated visual observer. This means it must be visible to the pilot or observer without the aid of any devices such as binoculars</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="9028_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Correct! &lt;span&gt;Part 107 mandates that the drone must be kept within the visual line of sight of the pilot or a designated visual observer. This means it must be visible to the pilot or observer without the aid of any devices such as binoculars.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="1829_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Incorrect. Part 107 mandates that the drone must be kept within the visual line of sight of the pilot or a designated visual observer. This means it must be visible to the pilot or observer without the aid of any devices such as binoculars</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_response.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;What are the responsibilities of the remote pilot in command and the visual observer in terms of the visual line of sight? Choose all that apply.&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="3921">
+                <material>
+                  <mattext texttype="text/plain">Observing the airspace for other air traffic or hazards</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3808">
+                <material>
+                  <mattext texttype="text/plain">Determining the uncrewed aircraft's attitude, altitude, and direction of flight</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8957">
+                <material>
+                  <mattext texttype="text/plain">Knowing the uncrewed aircraft's location</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6032">
+                <material>
+                  <mattext texttype="text/plain">Determining that the unmanned aircraft does not endanger the life or property of another</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">3921</varequal>
+                <varequal respident="response1">3808</varequal>
+                <varequal respident="response1">8957</varequal>
+                <varequal respident="response1">6032</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+            <displayfeedback feedbacktype="Response" linkrefid="correct_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="general_incorrect_fb"/>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="correct_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;Correct. According to § 107.31:&lt;/p&gt;
+&lt;p class="indent-1" data-title="107.31(a)"&gt;With vision that is unaided by any device other than corrective lenses, the remote pilot in command, the visual observer (if one is used), and the person manipulating the flight control of the small unmanned aircraft system must be able to see the unmanned aircraft throughout the entire flight in order to:&lt;/p&gt;
+&lt;div id="p-107.31(a)(1)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(1)"&gt;&lt;span class="paragraph-hierarchy"&gt;&lt;span class="paren"&gt;(&lt;/span&gt;1&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt; Know the unmanned aircraft's location;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="p-107.31(a)(2)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(2)"&gt;&lt;span class="paragraph-hierarchy" title="" data-original-title=""&gt;&lt;span class="paren"&gt;(&lt;/span&gt;2&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt; Determine the unmanned aircraft's attitude, altitude, and direction of flight;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="p-107.31(a)(3)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(3)"&gt;&lt;span class="paragraph-hierarchy"&gt;&lt;span class="paren"&gt;(&lt;/span&gt;3&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt; Observe the airspace for other air traffic or hazards; and&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="p-107.31(a)(4)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(4)"&gt;&lt;span class="paragraph-hierarchy"&gt;&lt;span class="paren"&gt;(&lt;/span&gt;4&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt; Determine that the unmanned aircraft does not endanger the life or property of another.&lt;/p&gt;
+&lt;/div&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="general_incorrect_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;Incorrect.&amp;nbsp;According to § 107.31:&lt;/p&gt;
+&lt;p class="indent-1" data-title="107.31(a)"&gt;With vision that is unaided by any device other than corrective lenses, the remote pilot in command, the visual observer (if one is used), and the person manipulating the flight control of the small unmanned aircraft system must be able to see the unmanned aircraft throughout the entire flight in order to:&lt;/p&gt;
+&lt;div id="p-107.31(a)(1)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(1)"&gt;&lt;span class="paragraph-hierarchy"&gt;&lt;span class="paren"&gt;(&lt;/span&gt;1&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;Know the unmanned aircraft's location;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="p-107.31(a)(2)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(2)"&gt;&lt;span class="paragraph-hierarchy" title="" data-original-title=""&gt;&lt;span class="paren"&gt;(&lt;/span&gt;2&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;Determine the unmanned aircraft's attitude, altitude, and direction of flight;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="p-107.31(a)(3)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(3)"&gt;&lt;span class="paragraph-hierarchy"&gt;&lt;span class="paren"&gt;(&lt;/span&gt;3&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;Observe the airspace for other air traffic or hazards; and&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="p-107.31(a)(4)"&gt;
+&lt;p class="indent-2" data-title="107.31(a)(4)"&gt;&lt;span class="paragraph-hierarchy"&gt;&lt;span class="paren"&gt;(&lt;/span&gt;4&lt;span class="paren"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;Determine that the unmanned aircraft does not endanger the life or property of another.&lt;/p&gt;
+&lt;/div&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

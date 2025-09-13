@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="g653046467c97a71b277d2f2ab66cd662" title="Video - Temperature and Dew Point Relationship (02:02 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;strong&gt;If the temperature is 17°C and the dewpoint is 16°C, what type of weather condition is most likely to develop?&lt;/strong&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2582">
+                <material>
+                  <mattext texttype="text/plain">Fog or low clouds</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9736">
+                <material>
+                  <mattext texttype="text/plain">Freezing precipitation</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6953">
+                <material>
+                  <mattext texttype="text/plain">Thunderstorms</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2582</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;strong&gt;Which of the following best describes "dewpoint"?&lt;/strong&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2254">
+                <material>
+                  <mattext texttype="text/plain">The temperature at which condensation and evaporation are equal.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1244">
+                <material>
+                  <mattext texttype="text/plain">The temperature at which dew will always form.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9256">
+                <material>
+                  <mattext texttype="text/plain">The temperature to which air must be cooled to become saturated.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9256</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;strong&gt;How does air temperature affect the air's capacity to hold moisture?&lt;/strong&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="676">
+                <material>
+                  <mattext texttype="text/plain">Higher temperatures increase the air's moisture-holding capacity.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7201">
+                <material>
+                  <mattext texttype="text/plain">Higher temperatures decrease the air's moisture-holding capacity.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8983">
+                <material>
+                  <mattext texttype="text/plain">Temperature has no effect on the air's ability to hold moisture.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3104">
+                <material>
+                  <mattext texttype="text/plain">Temperature only affects the air's moisture-holding capacity at night.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">676</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;p&gt;&lt;strong&gt;When is frost most likely to form on a UAV's wings or propellers?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="7375">
+                <material>
+                  <mattext texttype="text/plain">When the temperature of the wing or propeller's surface is below the dew point of the surrounding air.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8737">
+                <material>
+                  <mattext texttype="text/plain">When the dewpoint is lower than 0° C.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1568">
+                <material>
+                  <mattext texttype="text/plain">When the dewpoint of the surrounding air is lower than 0° C AND the temperature of the wing or propeller's surface is below the dew point.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">1568</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;strong&gt;&amp;nbsp;An air mass moving inland from the coast in winter is likely to result in:&amp;nbsp;&lt;/strong&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1225">
+                <material>
+                  <mattext texttype="text/plain">hail.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8874">
+                <material>
+                  <mattext texttype="text/plain">fog.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2405">
+                <material>
+                  <mattext texttype="text/plain">frost.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9325">
+                <material>
+                  <mattext texttype="text/plain">All are possible results.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8874</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;strong&gt;What are the characteristics of a moist, unstable air mass?&lt;/strong&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9878">
+                <material>
+                  <mattext texttype="text/plain">Turbulence and showery precipitation.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5138">
+                <material>
+                  <mattext texttype="text/plain">Poor visibility and smooth air.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6257">
+                <material>
+                  <mattext texttype="text/plain">Haze and smoke.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9878</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;strong&gt;What are the characteristics of stable air?&lt;/strong&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2151">
+                <material>
+                  <mattext texttype="text/plain">Good visibility and steady precipitation.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1652">
+                <material>
+                  <mattext texttype="text/plain">Poor visibility and steady precipitation.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9638">
+                <material>
+                  <mattext texttype="text/plain">Poor visibility and intermittent precipitation.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">1652</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

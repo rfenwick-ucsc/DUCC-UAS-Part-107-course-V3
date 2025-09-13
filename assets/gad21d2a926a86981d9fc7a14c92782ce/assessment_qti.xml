@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="gad21d2a926a86981d9fc7a14c92782ce" title="Video - Class D Airspace (01:21 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;What is the maximum altitude range of Class D airspace?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2235">
+                <material>
+                  <mattext texttype="text/plain">Surface to 700 feet AGL (Above Ground Level)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="588">
+                <material>
+                  <mattext texttype="text/plain">Surface to 1,200 feet AGL</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2025">
+                <material>
+                  <mattext texttype="text/plain">Surface to 2,500 feet AGL</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2025</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;A drone pilot wants to fly in Class D airspace, which surrounds many smaller airports with control towers. What is required?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2959">
+                <material>
+                  <mattext texttype="text/plain">No authorization is needed for drones in Class D airspace.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8586">
+                <material>
+                  <mattext texttype="text/plain">Prior authorization from the controlling agency.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8056">
+                <material>
+                  <mattext texttype="text/plain">An IFR flight plan.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">2959</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="2959_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">8586</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="8586_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">8056</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="8056_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8586</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="2959_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Drone pilots must obtain prior authorization to operate in Class D airspace, which is around smaller airports with control towers.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="8586_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Correct! &lt;span&gt;Drone pilots must obtain prior authorization to operate in Class D airspace, which is around smaller airports with control towers.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="8056_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Drone pilots must obtain prior authorization to operate in Class D airspace, which is around smaller airports with control towers.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;When a control tower, located on an airport within Class D airspace, ceases operation for the day, what happens to the airspace designation?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5029">
+                <material>
+                  <mattext texttype="text/plain">The airspace designation normally will not change.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3570">
+                <material>
+                  <mattext texttype="text/plain">The airspace reverts to Class E or a combination of Class E and G airspace during the hours the tower is not in operation.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9264">
+                <material>
+                  <mattext texttype="text/plain">The airspace remains Class D airspace as long as the weather observer or automated weather system is available.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">3570</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;(Refer to FAA-CT-8080-2H Figure 69) What does the [25] indicate in the airspace surrounding Naval Air Station Kingsville (NQI)?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4663">
+                <material>
+                  <mattext texttype="text/plain">Class D airspace from the surface up to (but not including) 2,500 feet.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2184">
+                <material>
+                  <mattext texttype="text/plain">Class D airspace with 2,500 feet ceiling.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4718">
+                <material>
+                  <mattext texttype="text/plain">Class E airspace with 2,500 feet ceiling.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2184</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

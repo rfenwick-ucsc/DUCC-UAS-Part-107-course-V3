@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="gf153a115b6b27889a9846e7e06f81e02" title="Video - Military Operation Areas and Routes (00:47 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;What action should a pilot take when operating in a Military Operations Area (MOA)?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2758">
+                <material>
+                  <mattext texttype="text/plain">Obtain clearance from the controlling agency prior to entering the MOA</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3057">
+                <material>
+                  <mattext texttype="text/plain">Operate only on the airways that transverse the MOA</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4122">
+                <material>
+                  <mattext texttype="text/plain">Exercise extreme caution when military activity is being conducted</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">2758</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="2758_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">3057</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="3057_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4122</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4122_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4122</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="2758_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;&lt;span&gt;Answer: C&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Military Operations Areas (MOAs) are established for the purpose of separating certain military training activities from instrument flight rules (IFR) traffic.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Each pilot is responsible for collision avoidance in a Military Operations Area (MOA).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Permission to fly in an MOA is not required, but pilots should exercise extreme caution.&lt;/span&gt;&lt;/p&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="3057_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;&lt;span&gt;Answer: C&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Military Operations Areas (MOAs) are established for the purpose of separating certain military training activities from instrument flight rules (IFR) traffic.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Each pilot is responsible for collision avoidance in a Military Operations Area (MOA).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Permission to fly in an MOA is not required, but pilots should exercise extreme caution.&lt;/span&gt;&lt;/p&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="4122_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;&lt;span&gt;Answer: C&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Military Operations Areas (MOAs) are established for the purpose of separating certain military training activities from instrument flight rules (IFR) traffic.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Each pilot is responsible for collision avoidance in a Military Operations Area (MOA).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Permission to fly in an MOA is not required, but pilots should exercise extreme caution.&lt;/span&gt;&lt;/p&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Who is responsible for collision avoidance in a Military Operations Area (MOA)?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2192">
+                <material>
+                  <mattext texttype="text/plain">Each pilot</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7256">
+                <material>
+                  <mattext texttype="text/plain">ATC controllers</mattext>
+                </material>
+              </response_label>
+              <response_label ident="471">
+                <material>
+                  <mattext texttype="text/plain">Military controllers</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">2192</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="2192_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7256</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7256_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">471</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="471_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2192</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="2192_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Each pilot is responsible for collision avoidance in a Military Operations Area (MOA).</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7256_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Each pilot is responsible for collision avoidance in a Military Operations Area (MOA).</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="471_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Each pilot is responsible for collision avoidance in a Military Operations Area (MOA).</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;__________ consist of airspace with defined vertical and lateral limits established for the purpose of separating certain military training activities from IFR traffic.&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="687">
+                <material>
+                  <mattext texttype="text/plain">Prohibited Areas</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6013">
+                <material>
+                  <mattext texttype="text/plain">Warning Areas</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7871">
+                <material>
+                  <mattext texttype="text/plain">MOAs</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2881">
+                <material>
+                  <mattext texttype="text/plain">No answer text provided.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">687</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="687_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">6013</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="6013_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7871</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7871_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7871</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="687_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Military Operations Areas (MOAs) are established for the purpose of separating certain military training activities from instrument flight rules (IFR) traffic.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="6013_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Military Operations Areas (MOAs) are established for the purpose of separating certain military training activities from instrument flight rules (IFR) traffic.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7871_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Military Operations Areas (MOAs) are established for the purpose of separating certain military training activities from instrument flight rules (IFR) traffic.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;(Refer to FAA-CT-8080-2H Figure 21) You have been hired by a farmer to use your small unmanned aircraft to inspect his crops. The area that you are to survey is in the Devil's Lake West MOA, east of area 2. How would you find out if the MOA is active?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9727">
+                <material>
+                  <mattext texttype="text/plain">Contact Flight Service.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1324">
+                <material>
+                  <mattext texttype="text/plain">Locate the information in the Small UAS database.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2070">
+                <material>
+                  <mattext texttype="text/plain">Refer to the Military Operations Directory.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">9727</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="9727_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">1324</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="1324_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">2070</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="2070_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9727</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="9727_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;&lt;span&gt;“Flight Service” is often used as a term to describe the controlling agency or contact facility.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&amp;nbsp;An MOA is a Military Operating Area. More information about MOAs can be found on the border of a Sectional Chart. You’ll see information like the name of the MOA, the operating altitude and time of use, the radio frequency and the controlling agency / contact facility that manages the MOA.&lt;/span&gt;&lt;/p&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="1324_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;&lt;span&gt;“Flight Service” is often used as a term to describe the controlling agency or contact facility.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&amp;nbsp;An MOA is a Military Operating Area. More information about MOAs can be found on the border of a Sectional Chart. You’ll see information like the name of the MOA, the operating altitude and time of use, the radio frequency and the controlling agency / contact facility that manages the MOA.&lt;/span&gt;&lt;/p&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="2070_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;&lt;span&gt;“Flight Service” is often used as a term to describe the controlling agency or contact facility.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&amp;nbsp;An MOA is a Military Operating Area. More information about MOAs can be found on the border of a Sectional Chart. You’ll see information like the name of the MOA, the operating altitude and time of use, the radio frequency and the controlling agency / contact facility that manages the MOA.&lt;/span&gt;&lt;/p&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="g1433437f2bd3fc09c923110295fc7290" title="Video - Operating Near Aircraft, Airports and Other Restricted Areas (01:57 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;During a flight of your small UA, you observe a hot air balloon entering the area. You should&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4712">
+                <material>
+                  <mattext texttype="text/plain">Ensure the uncrewed aircraft passes below, above, or ahead of the balloon</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9060">
+                <material>
+                  <mattext texttype="text/plain">Yield the right-of-way to the hot air balloon</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7749">
+                <material>
+                  <mattext texttype="text/plain">Expect the hot air balloon to climb above your altitude</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9060</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+            <displayfeedback feedbacktype="Response" linkrefid="correct_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="general_incorrect_fb"/>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="correct_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">&lt;p&gt;Correct. According to § 107.37, e&lt;span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;"&gt;ach small uncrewed aircraft must yield the right of way to all aircraft, airborne vehicles, and launch and reentry vehicles. Yielding the right of way means that the small uncrewed aircraft must give way to the aircraft or vehicle and may not pass over, under, or ahead of it unless well clear.&lt;/span&gt;&lt;/p&gt;
+&lt;div id="p-107.37(b)"&gt;
+&lt;p class="indent-1" data-title="107.37(b)"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="general_incorrect_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. According to § 107.37, e&lt;span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;"&gt;ach small uncrewed aircraft must yield the right of way to all aircraft, airborne vehicles, and launch and reentry vehicles. Yielding the right of way means that the small uncrewed aircraft must give way to the aircraft or vehicle and may not pass over, under, or ahead of it unless well clear.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;Do you need an authorization to operate a small uncrewed aircraft in prohibited or restricted areas?&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1523">
+                <material>
+                  <mattext texttype="text/plain">No authorization is needed to operate in these areas</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4557">
+                <material>
+                  <mattext texttype="text/plain">Yes, an authorization is needed from the Air Traffic Control (ATC)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2183">
+                <material>
+                  <mattext texttype="text/plain">Yes, an authorization is needed from the using or controlling agency</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2183</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

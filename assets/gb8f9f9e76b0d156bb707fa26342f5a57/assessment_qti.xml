@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="gb8f9f9e76b0d156bb707fa26342f5a57" title="Video - Class B Airspace (01:40 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Which type of airspace surrounds some of the busiest airports and requires prior authorization for drone operations?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5193">
+                <material>
+                  <mattext texttype="text/plain">Class G</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9756">
+                <material>
+                  <mattext texttype="text/plain">Class B</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4469">
+                <material>
+                  <mattext texttype="text/plain">Class D</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8281">
+                <material>
+                  <mattext texttype="text/plain">Class A</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9756</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;What is generally the vertical limit of Class B airspace?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="7039">
+                <material>
+                  <mattext texttype="text/plain">10,000 feet MSL</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4810">
+                <material>
+                  <mattext texttype="text/plain">Up to but not including 18,000 feet MSL</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2097">
+                <material>
+                  <mattext texttype="text/plain">Surface to 4,000 feet above the airport elevation</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7039</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7039_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4810</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4810_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">2097</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="2097_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7039</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="7039_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Correct.&lt;span&gt; &lt;span&gt;Although Class B airspace can vary substantially depending on the location of a Class B airport and its height above sea-level, the typical vertical limit of Class B for many of these busy airports is 10,000 MSL.&lt;/span&gt;&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="4810_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect.&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;Although Class B airspace can vary substantially depending on the location of a Class B airport and its height above sea-level, the typical vertical limit of Class B for many of these busy airports is 10,000 MSL.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="2097_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect.&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span&gt;Although Class B airspace can vary substantially depending on the location of a Class B airport and its height above sea-level, the typical vertical limit of Class B for many of these busy airports is 10,000 MSL.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;&amp;nbsp;Class B airspace is shaped like:&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6278">
+                <material>
+                  <mattext texttype="text/plain">An inverted triple layer cake.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9276">
+                <material>
+                  <mattext texttype="text/plain">A cylinder.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7671">
+                <material>
+                  <mattext texttype="text/plain">A sphere.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3635">
+                <material>
+                  <mattext texttype="text/plain">A rectangle.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">6278</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="6278_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">9276</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="9276_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7671</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7671_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">3635</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="3635_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6278</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="6278_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">That's right! &lt;span&gt;An inverted triple layer cake. This shape accommodates the increasing volume of traffic around busy airports.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="9276_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;An inverted triple layer cake. This shape accommodates the increasing volume of traffic around busy airports.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7671_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;An inverted triple layer cake. This shape accommodates the increasing volume of traffic around busy airports.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="3635_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;An inverted triple layer cake. This shape accommodates the increasing volume of traffic around busy airports.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;(Refer to FAA-CT-8080-2H, Figure 25, Area 3.) The floor of Class B airspace at Dallas Executive (RBD) is:&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="619">
+                <material>
+                  <mattext texttype="text/plain">At the surface</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1799">
+                <material>
+                  <mattext texttype="text/plain">3,000 feet</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9694">
+                <material>
+                  <mattext texttype="text/plain">3,100 feet</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">1799</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;(Refer to FAA-CT-8080-2H Figure 25, area 4.) What is the floor of Class B airspace at Ft. Worth Alliance (AFW) airport?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1332">
+                <material>
+                  <mattext texttype="text/plain">At the surface</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6095">
+                <material>
+                  <mattext texttype="text/plain">3,000 feet</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6553">
+                <material>
+                  <mattext texttype="text/plain">4,000 feet</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6553</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

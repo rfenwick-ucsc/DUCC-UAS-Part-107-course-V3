@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="g8700e30cc8a28d7a0400789934422185" title="Video - National Airspace System (NAS) Introduction (01:28 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;What must a drone pilot do to fly in a 'Controlled Airspace' under Part 107 rules?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5222">
+                <material>
+                  <mattext texttype="text/plain">Fly below 200 feet AGL.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8735">
+                <material>
+                  <mattext texttype="text/plain">Obtain prior authorization through LAANC or the FAA.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3657">
+                <material>
+                  <mattext texttype="text/plain">Only fly during daylight hours.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3987">
+                <material>
+                  <mattext texttype="text/plain">Ensure the drone is equipped with anti-collision lights.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">5222</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="5222_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">8735</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="8735_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">3657</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="3657_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">3987</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="3987_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8735</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="5222_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Obtain prior authorization through LAANC (Low Altitude Authorization and Notification Capability) or the FAA.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="8735_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Correct. &lt;span&gt;Obtain prior authorization through LAANC (Low Altitude Authorization and Notification Capability) or the FAA.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="3657_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Obtain prior authorization through LAANC (Low Altitude Authorization and Notification Capability) or the FAA.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="3987_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Obtain prior authorization through LAANC (Low Altitude Authorization and Notification Capability) or the FAA.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;In which airspace class is drone operation prohibited without prior authorization from ATC?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="326">
+                <material>
+                  <mattext texttype="text/plain">Class E</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4448">
+                <material>
+                  <mattext texttype="text/plain">Class B</mattext>
+                </material>
+              </response_label>
+              <response_label ident="805">
+                <material>
+                  <mattext texttype="text/plain">Class G</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4448</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Special Use Airspace (SUA) may require communication with ATC and prior authorization for drone operations. Which of the following is an example of SUA?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3256">
+                <material>
+                  <mattext texttype="text/plain">Class B</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9282">
+                <material>
+                  <mattext texttype="text/plain">Class G</mattext>
+                </material>
+              </response_label>
+              <response_label ident="162">
+                <material>
+                  <mattext texttype="text/plain">Military Operations Area (MOA)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1034">
+                <material>
+                  <mattext texttype="text/plain">Class E</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">162</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Which airspace class is typically used for high-altitude commercial airliner flights?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3175">
+                <material>
+                  <mattext texttype="text/plain">Class E</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7473">
+                <material>
+                  <mattext texttype="text/plain">Class B</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8258">
+                <material>
+                  <mattext texttype="text/plain">Class A</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2851">
+                <material>
+                  <mattext texttype="text/plain">Class G</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8258</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Which airspace requires drone pilots to obtain authorization from the FAA before flying?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3710">
+                <material>
+                  <mattext texttype="text/plain">Class A</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7010">
+                <material>
+                  <mattext texttype="text/plain">Class B</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1023">
+                <material>
+                  <mattext texttype="text/plain">Class C</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2586">
+                <material>
+                  <mattext texttype="text/plain">Both B and C</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">3710</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="3710_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7010</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7010_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">1023</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="1023_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">2586</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="2586_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2586</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="3710_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Drone pilots must obtain authorization from the FAA to fly in Class B and C airspace, which are around busier airports with controlled traffic.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7010_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Drone pilots must obtain authorization from the FAA to fly in Class B and C airspace, which are around busier airports with controlled traffic.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="1023_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Drone pilots must obtain authorization from the FAA to fly in Class B and C airspace, which are around busier airports with controlled traffic.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="2586_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">That's right! &lt;span&gt;Drone pilots must obtain authorization from the FAA to fly in Class B and C airspace, which are around busier airports with controlled traffic.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

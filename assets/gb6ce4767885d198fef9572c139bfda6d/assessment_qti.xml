@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_qtiasiv1p2p1_v1p0.xsd">
+  <assessment ident="gb6ce4767885d198fef9572c139bfda6d" title="Video - Class G Airspace (00:58 min)">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_profile</fieldlabel>
+        <fieldentry>cc.exam.v0p1</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_assessmenttype</fieldlabel>
+        <fieldentry>Examination</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>qmd_scoretype</fieldlabel>
+        <fieldentry>Percentage</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;In which airspace class is drone operation generally unrestricted and does not require communication with ATC?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4712">
+                <material>
+                  <mattext texttype="text/plain">Class D</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8518">
+                <material>
+                  <mattext texttype="text/plain">Class C</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3775">
+                <material>
+                  <mattext texttype="text/plain">Class G</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8752">
+                <material>
+                  <mattext texttype="text/plain">Class A</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">3775</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Class G airspace is:&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3494">
+                <material>
+                  <mattext texttype="text/plain">Controlled airspace.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7881">
+                <material>
+                  <mattext texttype="text/plain">Uncontrolled airspace.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4186">
+                <material>
+                  <mattext texttype="text/plain">Restricted airspace.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4624">
+                <material>
+                  <mattext texttype="text/plain">Prohibited airspace.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">3494</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="3494_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7881</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7881_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4186</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4186_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4624</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4624_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7881</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="3494_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Class G is uncontrolled airspace where ATC services are not provided.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7881_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">That's right! &lt;span&gt;Class G is uncontrolled airspace where ATC services are not provided.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="4186_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Class G is uncontrolled airspace where ATC services are not provided.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="4624_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Class G is uncontrolled airspace where ATC services are not provided.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;Which type of airspace typically surrounds a non-towered airport?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1519">
+                <material>
+                  <mattext texttype="text/plain">Class B</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1589">
+                <material>
+                  <mattext texttype="text/plain">Class C</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7113">
+                <material>
+                  <mattext texttype="text/plain">Class D</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7931">
+                <material>
+                  <mattext texttype="text/plain">Class G</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">1519</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="1519_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">1589</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="1589_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7113</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7113_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7931</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7931_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7931</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="1519_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Non-towered airports are often surrounded by Class G airspace.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="1589_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Non-towered airports are often surrounded by Class G airspace.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7113_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Non-towered airports are often surrounded by Class G airspace.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7931_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">That's right! &lt;span&gt;Non-towered airports are often surrounded by Class G airspace.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;What is the maximum altitude at which a drone can legally fly under Part 107 rules in uncontrolled (Class G) airspace?&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="7700">
+                <material>
+                  <mattext texttype="text/plain">200 feet above ground level (AGL)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9822">
+                <material>
+                  <mattext texttype="text/plain">400 feet AGL</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4791">
+                <material>
+                  <mattext texttype="text/plain">500 feet AGL</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8179">
+                <material>
+                  <mattext texttype="text/plain">600 feet AGL</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7700</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7700_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">9822</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="9822_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4791</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4791_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">8179</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="8179_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9822</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="7700_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Under Part 107, drones are limited to a maximum altitude of 400 feet AGL in uncontrolled (Class G) airspace to ensure separation from manned aircraft.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="9822_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">That's right! &lt;span&gt;Under Part 107, drones are limited to a maximum altitude of 400 feet AGL in uncontrolled (Class G) airspace to ensure separation from manned aircraft.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="4791_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Under Part 107, drones are limited to a maximum altitude of 400 feet AGL in uncontrolled (Class G) airspace to ensure separation from manned aircraft.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="8179_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/html">Incorrect. &lt;span&gt;Under Part 107, drones are limited to a maximum altitude of 400 feet AGL in uncontrolled (Class G) airspace to ensure separation from manned aircraft.&lt;/span&gt;</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+      <item ident="gf47b767d37e06559ff801f2d253307ba" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>cc_profile</fieldlabel>
+              <fieldentry>cc.multiple_choice.v0p1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div&gt;&lt;span&gt;(Refer to FAA-CT-8080-2H Figure 78) Identify the airspace over Onawa airport (K36).&lt;/span&gt;&lt;/div&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4047">
+                <material>
+                  <mattext texttype="text/plain">Class G airspace - surface up to but not including 18,000 feet MSL.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7644">
+                <material>
+                  <mattext texttype="text/plain">Class G airspace - surface up to but not including 700 feet MSL, Class E airspace - 700 feet to 14,500 feet MSL.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="839">
+                <material>
+                  <mattext texttype="text/plain">Class G airspace - surface up to but not including 1,200 feet AGL, Class E airspace - 1,200 feet AGL up to but not including 18,000 feet MSL.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">4047</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="4047_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">7644</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="7644_fb"/>
+          </respcondition>
+          <respcondition continue="Yes">
+            <conditionvar>
+              <varequal respident="response1">839</varequal>
+            </conditionvar>
+            <displayfeedback feedbacktype="Response" linkrefid="839_fb"/>
+          </respcondition>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4047</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="4047_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Onawa airport (K36) airport sits in Class G airspace. The thing to remember in this question is that while the airport sits in Class G airspace, how high does that Class G airspace go up to? unless it is marked otherwise, Class E airspace usually starts at 1,200 ft. AGL.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="7644_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Onawa airport (K36) airport sits in Class G airspace. The thing to remember in this question is that while the airport sits in Class G airspace, how high does that Class G airspace go up to? unless it is marked otherwise, Class E airspace usually starts at 1,200 ft. AGL.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="839_fb">
+          <flow_mat>
+            <material>
+              <mattext texttype="text/plain">Onawa airport (K36) airport sits in Class G airspace. The thing to remember in this question is that while the airport sits in Class G airspace, how high does that Class G airspace go up to? unless it is marked otherwise, Class E airspace usually starts at 1,200 ft. AGL.</mattext>
+            </material>
+          </flow_mat>
+        </itemfeedback>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>
