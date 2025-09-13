@@ -37,7 +37,7 @@ Co-Founder of the CITRIS Initiative for Drone Education and Research, Becca was 
 **Executive Director of CITRIS UCSC**  
 Email: [mmatkin@ucsc.edu](mailto:mmatkin@ucsc.edu) • Phone: 831-239-2831
 
-Co-Founder of the UCSC CITRIS Initiative for Drone Education and Research, Michael is the Executive Campus Director of CITRIS and the Banatao Institute at UC Santa Cruz. In this position, Michael is responsible for launching several programs, including the CITRIS UCSC Interdisciplinary Innovation Program (I2P), a competitive program to fund promising early-stage research conducted by PIs from at least two campus divisions; and Tech for Social Good, a program to provide funding and support to multi-disciplinary student teams developing social good–focused projects and events.
+Co-Founder of the UCSC CITRIS Initiative for Drone Education and Research, Michael is the Executive Campus Director of CITRIS and the Banatao Institute at UC Santa Cruz. In this position, Michael is responsible for launching several programs, including the CITRIS UCSC Interdisciplinary Innovation Program (I2P), a competitive program to fund promising early-stage research conducted by PIs from at least two campus divisions; and Tech for Social Good, a program to provide funding and support to multi-disciplinary student teams developing social-good projects and events.
 
 ---
 
