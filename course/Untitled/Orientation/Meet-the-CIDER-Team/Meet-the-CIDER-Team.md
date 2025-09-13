@@ -10,7 +10,7 @@ If you have any questions about the program, please contact [Jenna Contuchio](ma
 
 ### Professor Katia Obraczka
 
-![Prof. Katia Obraczka](../assets/web_resources/Uploaded%20Media/Obraczka.jpeg)
+![Prof. Katia Obraczka](../../../assets/web_resources/Uploaded%20Media/Obraczka.jpeg)
 
 **Campus Director of CITRIS UCSC**  
 Email: [katia@soe.ucsc.edu](mailto:katia@soe.ucsc.edu)
@@ -21,7 +21,7 @@ Professor Obraczka is the Campus Director of CITRIS at the University of Califor
 
 ### Dr. Becca Fenwick
 
-![CIDER_Becca_Portrait-01](../assets/web_resources/Uploaded%20Media/CIDER_Becca_Portrait-01.jpg)
+![CIDER_Becca_Portrait-01](../../../assets/web_resources/Uploaded%20Media/CIDER_Becca_Portrait-01.jpg)
 
 **Pilot Training Program Instructor and CIDER Director**  
 Email: [rfenwick@ucsc.edu](mailto:rfenwick@ucsc.edu) • Phone: 951-522-8100
@@ -32,18 +32,18 @@ Co-Founder of the CITRIS Initiative for Drone Education and Research, Becca was 
 
 ### Michael Matkin
 
-![CIDER_Michael-Matkin_Portrait-01](../assets/web_resources/Uploaded%20Media/CIDER_Michael-Matkin_Portrait-01.jpg)
+![CIDER_Michael-Matkin_Portrait-01](../../../assets/web_resources/Uploaded%20Media/CIDER_Michael-Matkin_Portrait-01.jpg)
 
 **Executive Director of CITRIS UCSC**  
 Email: [mmatkin@ucsc.edu](mailto:mmatkin@ucsc.edu) • Phone: 831-239-2831
 
-Co-Founder of the UCSC CITRIS Initiative for Drone Education and Research, Michael is the Executive Campus Director of CITRIS and the Banatao Institute at UC Santa Cruz. In this position, Michael is responsible for launching several programs, including the CITRIS UCSC Interdisciplinary Innovation Program (I2P), a competitive program to fund promising early-stage research conducted by PIs from at least two campus divisions; and Tech for Social Good, a program to provide funding and support to multi-disciplinary student teams developing social-good projects and events.
+Co-Founder of the UCSC CITRIS Initiative for Drone Education and Research, Michael is the Executive Campus Director of CITRIS and the Banatao Institute at UC Santa Cruz. In this position, Michael is responsible for launching several programs, including the CITRIS UCSC Interdisciplinary Innovation Program (I2P), a competitive program to fund promising early-stage research conducted by PIs from at least two campus divisions; and Tech for Social Good, a program to provide funding and support to multi-disciplinary student teams developing social good–focused projects and events.
 
 ---
 
 ### Saara Korpela
 
-![saara-korpela](../assets/web_resources/Uploaded%20Media/saara-korpela.png)
+![saara-korpela](../../../assets/web_resources/Uploaded%20Media/saara-korpela.png)
 
 **CITRIS/CIDER Administrative and Program Assistant**  
 Email: [skorpela@ucsc.edu](mailto:skorpela@ucsc.edu)
